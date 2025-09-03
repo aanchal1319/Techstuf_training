@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        object are used to collect collection of data 
+    </p>
+     <script>
+                //alert("Hello from embedded JavaScript!");hello from the other
+                /*hello its me*/
+                //var age=6;variables are giving name to value that we can change or update or keep track of it
+                var name='ben'
+                function printf(){
+                    console.log(name)
+                }
+                printf()
+                /* name is global variable right now cause it is defined outside the function any variable defined inside the function can only be escessed inside that function*/
+                var age=55
+                if(age){
+                    const doubleage=age +age
+                    console.log(doubleage)
+                }
+                doubleage
+                /* in the above code doubleage can be easily asccess outside if thats the proble with javascript it mnakes the variable unsafe therefore we use const and let  
+                const variabel is block scope that means its only accessed between the {} or block it is defined in this includes function too
+                next thing about const is that it can be defined only once
+                but const cannot be redeclared therefore we use let so we change the variables whenw eneeded*/
+                let age=19
+                let adult=false
+                if(age>18){
+                    adult=true;
+                }
+                cosole.log(adult)
+    </script>
+</body>
+</html>

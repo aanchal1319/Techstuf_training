@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-style: italic;
+    }
+    span.alert{
+        background-color: aqua;
+        
+    }
+/* selectors types are id ,class,attribute,element,then pseueda classes whicgh are include with : like nth child hover or visted and then:: is pseudo element that is first line last line and stuff
+after that their is & selector that works to write complex selectore like suppose h+p~p we can write it as h {} &+p{} &~p{} like nesting then there is > child selector + next sibling selector it select immediate sibbling ~ it select sibbling but it dont have to be immediate || nodes that are from same comlumn
+then there is attribute selector 
+a[attr]
+a[attr=value] select attribute with exact value
+a[arrt$=value] that endd with that value
+a[attr*=value] wich conatin that value anywhere
+a[attr~=value] that is contains that value in the name
+a[attr|=value] can exactly like value or begin with them a hypen
+a[attr^=value] that is prefixeed by the value
+if thier is numbe or  charcter than / is added in class and 0 for ammount of number
+ then there is type selectors that selects uusing node names 
+ * is a universal selector*/
+</style>
+<body>
+    <div class="container">
+  <h1>This is a heading</h1>
+  <p>
+    Veggies es <span class="alert">bonus vobis</span>, proinde vos postulo
+    <span class="alert stop">essum magis</span> kohlrabi welsh onion daikon
+    amaranth tatsoi tomatillo melon azuki bean garlic.
+  </p>
+  <h2 id="special">A level 2 heading</h2>
+  <p>Gumbo beet greens corn soko endive gumbo gourd.</p>
+  <h2>Another level 2 heading</h2>
+  <p>
+    <span class="alert go">Parsley shallot</span> courgette tatsoi pea sprouts
+    fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber
+    earthnut pea peanut soko zucchini.
+  </p>
+</div>
+</body>
+</html>

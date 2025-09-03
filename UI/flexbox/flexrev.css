@@ -1,0 +1,84 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+section{
+    background-color: antiquewhite;
+    border: 1px;
+    border-style: dashed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*display: flex;
+    flex-flow: row;
+    flex: 25%;
+    row-gap: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*column-gap: 3px;
+    row-gap: 5px;*/
+    /*width: 500px;
+    height: 300px;*/
+    
+    
+}
+/*div:nth-of-type(odd){
+    flex:1;is the shorthand for shrink,grow and basis that bmeans the item can grow and shrink on the basis of 0 i.e 1 1 0 shrink grow basis
+}
+div:nth-of-type(3){
+    align-self: flex-end;
+    flex-grow: 4;
+}
+div:last-child{
+    align-self: flex-end;this property to align items irespective of the alignment of other itemsf
+    lex-direction: column;column-gap: 3px;
+}
+div:nth-child(1){
+    order: 3;
+}
+div:nth-child(2){
+    order: 5;
+}*/
+div{
+    border: 2px;
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+   /*
+    flex: 1 1 autoits shorthand property that combines flex shrink,grow,basis(basis is space item take respective of available space,shrink is to shrink the item,grow is to grow item)*/
+    /*align-items: center;align items acroos the cross axis*/
+    /*justify-content: space-around;align item acroos the main axis*/
+    /*
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 100px;*/
+}/*
+
+@media (max-width:800px){
+    section{
+    flex-wrap: wrap;height: 600px;flex: 100%;}
+}
+@media  (max-width:800px){
+    section{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (hover:hover) {
+    body:hover{
+        background-color: cyan;
+    }
+}*/
+@media screen and (max-width:250px) , (orientation: landscape) {
+    section{
+        flex-direction: column-reverse;
+    }
+    section div:nth-child(2n+1){
+        
+        background-color: bisque;
+        
+    }
+}
+    

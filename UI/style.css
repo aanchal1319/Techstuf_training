@@ -1,0 +1,106 @@
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(84, 96, 99, 0.781);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2%;
+}
+/*
+nav ul li {
+    padding: 80px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+   list style type
+   list style image
+   list style position
+    we can use start attribute and do reversed to get reversed list
+     we can set value of list item using value attribute 
+}*/
+/*styling links*/
+a {
+  flex: 1;
+  text-decoration: none;
+  outline-color: transparent;
+  text-align: center;
+  line-height: 3;
+  color: black;
+}
+a:link,a:visited,a:focus{
+    background-color: aquamarine;
+}
+a:hover{
+    background-color: rgb(74, 138, 116);
+}
+a:active{
+    background-color: rgb(25, 71, 56);
+}
+.home{
+    border-bottom-style: inset;
+    width: 100%;
+    height: 300px;
+    background-image: url(cloud.jpeg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: linear-gradient();
+}
+.box {
+  border: 2px solid rgba(8, 192, 70, 0.842);
+  background-color: rgba(164, 224, 187, 0.973);
+  padding: 50px;
+  margin: 10px;
+  width: 300px;
+  height: 150px;
+  border-radius: 20%;
+  box-shadow: 10px 5px 5px rgb(4, 102, 17);
+}
+.box2{
+    border-bottom-style: dotted;
+    border-radius: 10%;
+}
+/*content overflow*/
+.scroll{
+    overflow: scroll;
+    width: 400px;
+    height: 100px;
+    border: 2px solid ;
+    margin:2em;
+}
+/*size and values*/
+.ems{
+    text-decoration: overline;
+    text-decoration-style:wavy ;
+    
+    line-height: normal;
+    font-stretch:condensed ;
+}
+/* styling table*/
+table {
+  table-layout: fixed;
+  width: 80%;
+  min-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border :1px solid rgba(174, 66, 224, 0.267);
+
+}
+th,
+td {
+    vertical-align: top;
+    padding: 0.6em;
+    border:1px solid rgba(174, 66, 224, 0.267); 
+
+}
+tr{
+    text-align: center;
+}
+tbody tr:nth-child(odd) {
+  background-color: #f7d1fc;
+}
+th,td:hover{
+  background-color: rgb(134, 21, 134);
+}

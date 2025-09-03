@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(38, 48, 65);
+    }
+    .box{
+        margin: auto;
+        border: 5px solid red;
+        height: 200px;
+        width: 200px;
+        padding: 20px;
+        background-image: url(cloud.jpeg);
+        backdrop-filter: blur(10px);
+        object-fit: contain;
+        background-size: contain;
+        background-repeat: no-repeat;background-position: center;
+        
+    }
+    .box1{
+        /*margin: 0px 10px 5px ;*/
+        margin-top:5% ;
+        border: 5px solid rgb(0, 26, 255);
+        height: 80px;
+        width: 200px;
+        color: rgb(0, 5, 10);
+        padding: 10px;
+        background-color: aquamarine;
+        overflow: scroll;
+        
+    }
+    .box2{
+        margin: auto;
+        border: 5px solid red;
+        height: 80px;
+        width: 200px;
+        box-sizing: border-box;
+    }
+    p{
+        background-color: blanchedalmond;
+    }
+    /*background image,size,position repeat background attachement scroll,fixed
+    inline boxes doesnt respect hieght and widhth specified to them therefore woe use dicplay =inline block */
+</style>
+<body>
+    <div class="box"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, nisi!</p></div>
+     <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint rerum esse voluptatibus odio dolor ut, veniam, ad provident eligendi illo natus veritatis quisquam! Totam.loreem Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+      <div class="box2"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></div>
+</body>
+</html>

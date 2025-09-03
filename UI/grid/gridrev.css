@@ -1,0 +1,102 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.container{
+    display: grid;
+    /*grid template rows and coloumns are used to divide the grid into rows and columns 
+    grid-template-columns: [first] 40px [line2] 30px [line3] 70px [line3] 50px [end];
+    grid-template-columns: repeat(3,30px [colstart]);*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: [row1] 100px [row2] 50px;
+    background-color: dodgerblue;
+    padding: 10px;
+    border-style: dashed;
+    flex-direction: column;
+}
+div{
+    border: 2px;
+    /*
+    margin: 10px;
+    padding: 5px;*/
+    
+    
+    border-color: black;
+    border-style: dotted;
+}
+.area{
+    background-color: rgb(208, 173, 241);
+    display: grid;
+    border-style: double;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+    /*
+    align self ; align the items along the coloumn axis
+    justify self: align items along with row axis
+    place self: do that along the both axis
+    justify items: align itemns of whole grid along row axis
+    align items :align itemls along column around whole grid
+    place items for both axis in whole grid
+    fr is sizing term used define fractin of screen
+    justify content its justifies the content on thw whole grid
+    gap: 5px;*/
+    grid-auto-rows: 300px;
+    grid-auto-columns: 200px;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    column-gap: 5px;
+    row-gap: 10px;
+}
+.area>div.header{
+    grid-area: header;
+    align-self: self-start;
+    justify-self: stretch;
+    border-style: double;
+    background-color: rgb(71, 71, 226);
+}
+.area>div.main{
+    grid-area: main;
+    text-align: center;
+    border-style: double;
+    /*
+    grid-template-columns: subgrid; only supported in firefox*/
+    background-color: aquamarine;
+}
+.area>div.sidebar{
+    grid-area: sidebar;
+    text-align: center;
+    border-style: double;
+    background-color: rgb(173, 97, 97);
+}
+.area>div.footer{
+    grid-area: footer;
+    text-align: center;
+    border-style: double;
+    background-color: rgb(194, 204, 109);
+}
+@media screen and (max-width:250px) or (max-height:400px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background-color: cadetblue;
+    }
+    .area{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header"
+        "main sidebar"
+        "footer footer";
+
+    }
+    
+}
+@media (not (color)) or (hover){
+    .body{
+        background-color: brown;
+    }
+}
