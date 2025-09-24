@@ -15,7 +15,7 @@ const ben= {//normal objects making
 console.log(ben.fname);//by using dot nottation
 console.log(ben["age"]);//by using brackets
 const john= new person("john doe","55","usa");//creating new object by using"new" 
-const rand = new person("Rand McKinnon", 33, "M");
+const rand = new person("mandy McKinnon", 33, "M");
 const ken = new person("Ken Jones", 39, "M");
 
 //emmurating object properties

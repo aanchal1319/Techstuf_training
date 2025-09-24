@@ -38,3 +38,17 @@ for (let i = 1; i <= 3; i++) {
 
 //break statement is use to terminet the innermost loop but if used with lable it termintaed that labeled loop
 // continue statement it terminate the current iteration of the innermost loop and strt with nxt iteration but if used with lable it start that labled loop
+
+//for in is nota dviced to be used in array as it iterates over property for of is used more
+let a=[45,6,7,4,3]
+for(const i of a){
+    console.log(i)
+}
+const obj={
+    name:"tina",
+    age:33,
+}
+for(key in obj){
+    console.log(obj[key]);
+    
+}

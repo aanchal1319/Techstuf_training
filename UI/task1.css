@@ -59,9 +59,12 @@ footer {
 }
 
 @media(max-width:590px)  {
+
     body{
         font-size: 0.9rem;
     }
+
+  
     .nav {
         justify-content: space-between;
         position: relative;
@@ -102,7 +105,11 @@ footer {
     .text {
         width: 100%;
         height: auto;
+
         text-align: center;
+
+        text-align:start;
+
     }
     img {
         width: 100%;

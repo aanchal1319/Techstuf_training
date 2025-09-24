@@ -12,3 +12,4 @@ console.log(x)
 let str="hi"
 let num= +str// unary operator converts string to number and if it cant it returu NaN
 console.log(num)
+///**/ */

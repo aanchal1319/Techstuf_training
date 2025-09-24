@@ -21,3 +21,6 @@ console.log("for of loop")
 for(const [key,value]of Object.entries(person)){
     console.log(key,value);
 }
+Object.entries(person).forEach((key)=>{
+    console.log(key)
+})
