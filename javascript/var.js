@@ -37,14 +37,20 @@
 // var a= 9;
 // console.log(a);
 
-// const a=10;
-const obj1={
-  name:"ren",
-  age:23,
-}
+// // const a=10;
+// const obj1={
+//   name:"ren",
+//   age:23,
+// }
 
-// const obj2={ ...obj1}
-// obj2.name="jen"
-// console.log(obj1,obj2)
+// // const obj2={ ...obj1}
+// // obj2.name="jen"
+// // console.log(obj1,obj2)
 
-console.log(Object.keys(obj1));
+// console.log(Object.keys(obj1));
+console.log(a);
+
+const a=10;
+
+
+
