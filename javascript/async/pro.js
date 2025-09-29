@@ -1,15 +1,25 @@
-console.log("start");
+// console.log("start");
 
-let myProm=new Promise(function(res,rej){
-    let x=1;
-    if(x==0)res("OK")
-    else rej("NOOO")
-  console.log("pro");
+// let myProm=new Promise(function(res,rej){
+//     let x=1;
+//     if(x==0)res("OK")
+//     else rej("NOOO")
+//   console.log("pro");
   
- })
- console.log(10);
-myProm 
-.then(res=>console.log(res)
-)
-.catch(err=>console.error(err)
-)
+//  })
+//  console.log(10);
+// myProm 
+// .then(res=>console.log(res)
+// )
+// .catch(err=>console.error(err)
+// 
+async function myfun(x) {
+  if (x){
+    console.log("success");
+    
+  }
+  else{
+    console.log(fail);
+    
+  }
+}

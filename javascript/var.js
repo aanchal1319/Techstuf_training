@@ -48,9 +48,13 @@
 // // console.log(obj1,obj2)
 
 // console.log(Object.keys(obj1));
-console.log(a);
+// console.log(a);
 
-const a=10;
+// const a=10;
 
-
+(function test(){
+  var a = b = 5;
+})();
+console.log(typeof a);
+console.log(typeof b);
 

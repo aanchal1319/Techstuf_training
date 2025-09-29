@@ -32,3 +32,8 @@ async function Dataget(){
   const data= await fetch("https://jsonplaceholder.typicode.com/users/1")
   const res= await data.json()
 }
+async function dynamo(){
+  if(x>0){
+    con
+  }
+}
