@@ -1,0 +1,43 @@
+
+.nav {
+  display: flex;
+  flex-flow:row;
+  justify-content: end;
+  align-content: space-between;
+  padding: 15px;
+  gap: 5px;
+
+}
+
+p{
+  padding-top: 10px;
+}
+img{
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  float: right;
+
+}
+footer{
+  
+  border: 2px solid royalblue;
+  text-align: center;
+  
+}
+.about{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas: 
+  ""
+  
+}
+footer{
+  grid-area: auto;
+}
+
+
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-start p-6">
+
+  <h1 class="text-3xl font-bold text-blue-600 mb-6">Task Manager</h1>
+
+  <form class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md space-y-4">
+    <div>
+      <label class="block font-medium mb-1">Task Title:</label>
+      <input id="title" type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+    </div>
+
+    <div>
+      <label class="block font-medium mb-1">Task Content:</label>
+      <input id="task" type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+    </div>
+
+    <div>
+      <label class="block font-medium mb-1">Due Date:</label>
+      <input type="date" id="Due" name="DueDate" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+    </div>
+
+    <div class="flex gap-3">
+      <button id="addtask" type="button" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Save Task</button>
+      <button id="cancelEdit" type="button" style="display:none;" class="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500">Cancel Edit</button>
+    </div>
+  </form>
+
+  <a href="task.html" class="mt-6 text-blue-500 hover:underline">View Tasks List</a>
+
+  <ul id="taskList" class="mt-6 w-full max-w-md space-y-2"></ul>
+
+  <script src="main.js"></script>
+</body>
+</html>
