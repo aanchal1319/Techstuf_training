@@ -1,5 +1,6 @@
 const taskDisplay = document.getElementById("taskDisplay");
 const searchBox=document.getElementById("search")
+const filterDone=document.getElementById("filter")
 
 function renderTask(post, index) {
   const li = document.createElement("li");
@@ -13,7 +14,9 @@ function renderTask(post, index) {
     </strong>: 
     <span style="${post.done ? 'text-decoration: line-through; color: gray;' : ''}">
       ${post.content}
-    </span><br>
+
+    </span>
+    <br>
     <small>Due: ${post.dueDate || "No due date"}</small><br>
     <small>Added: ${dateText}</small><br>
     <div class="flex gap-4 pt-4 ">
@@ -50,18 +53,18 @@ function loadTasks(sorted = false) {
     return;
   }
 
-  // Add original index for reference
+
   posts = posts.map((post, i) => ({ ...post, originalIndex: i }));
 
-  // Sort done → bottom
+
   posts.sort((a, b) => {
     if (a.done === b.done) {
       return 0;
     }
-    return a.done ? 1 : -1; // unfinished first
+    return a.done ? 1 : -1; 
   });
 
-  posts.forEach(post => renderTask(post, post.originalIndex));
+  posts.forEach(post => renderTask(post, post.originalIndex)).forEach(post => renderTask(post, post.originalIndex));
 }
 
 
@@ -70,14 +73,13 @@ function filterTasks(query) {
   taskDisplay.innerHTML = "";
   let posts = JSON.parse(localStorage.getItem("posts")) || [];
 
-  // Keep original index
+
   posts = posts.map((post, i) => ({ ...post, originalIndex: i }));
 
   posts
     .filter(task => task.title.toLowerCase().includes(query))
     .forEach(post => renderTask(post, post.originalIndex));
 }
-
 
 
 
